@@ -1,0 +1,31 @@
+name: update-readme
+
+# Rebuilds the project lists from repos tagged portfolio-data / portfolio-fun.
+# Commits only when the list actually changed.
+on:
+  schedule:
+    - cron: "23 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild project lists
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_readme.py
+      - name: Commit if changed
+        run: |
+          if git diff --quiet README.md; then exit 0; fi
+          git config user.name "Shubham Yadav"
+          git config user.email "5401743+sky-five@users.noreply.github.com"
+          git commit -am "Update project list"
+          git push
