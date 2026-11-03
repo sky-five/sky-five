@@ -7,6 +7,7 @@ Analytics engineer and BI developer near Toronto. I turn messy operational data 
 ## Data and AI projects
 
 <!-- projects:data:start -->
+- **[saas-world-sim](https://github.com/sky-five/saas-world-sim)**: Seeded, deterministic simulated SaaS business in Python (pandas, pyarrow): as-of-any-date view and mock paginated API, 11 tables, 38 tests. Synthetic data.
 - **[ridgeline-analytics](https://github.com/sky-five/ridgeline-analytics)**: Analytics platform for a fictional roofing SaaS: dlt, dbt, DuckDB/Snowflake. 94 tests, 27 governed metrics, an AI analyst that scored 20/20 on its eval. Synthetic data. · [live](https://sky-five.github.io/ridgeline-analytics/)
 <!-- projects:data:end -->
 
