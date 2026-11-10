@@ -14,7 +14,7 @@ Analytics engineer and BI developer near Toronto. I turn messy operational data 
 ## Builds for fun
 
 <!-- projects:fun:start -->
-- **[material-glass](https://github.com/sky-five/material-glass)**: Material 3 on Liquid-Glass surfaces. Design tokens, one CSS file, real refraction and liquid motion. Unofficial, MIT. · [live](https://sky-five.github.io/material-glass/)
+- **[material-glass](https://github.com/sky-five/material-glass)**: Material 3 on Liquid Glass: 8 themes, a theme generator, 60+ components, refraction and liquid motion. WCAG-tested. · [live](https://sky-five.github.io/material-glass/)
 - **[fpv-rc-car](https://github.com/sky-five/fpv-rc-car)**: Drive a real RC car from a G29 sim rig: ESP32 over UDP, phone FPV video over WebRTC, HUD overlay. Zero-config discovery.
 - **[audio-visualizer](https://github.com/sky-five/audio-visualizer)**: Beat-reactive MilkDrop/Butterchurn visualizer for Windows that reacts to whatever is playing (system audio loopback).
 <!-- projects:fun:end -->
